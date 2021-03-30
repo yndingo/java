@@ -32,8 +32,30 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.*;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class task3 {
+    
+   static int getNumber(String s){        
+         Matcher m = Pattern.compile("\\d+").matcher(s);
+         String result="";
+         while (m.find()){
+             result+=m.group();
+             System.out.println(result);
+         }
+         try {
+             return Integer.parseInt(result);
+         }
+         catch(NumberFormatException e){
+             System.out.println(e);
+             return -1;
+         }
+             
+
+    }
     public static void main(String[] args){
         
 //        try {
@@ -47,7 +69,13 @@ public class task3 {
 //      System.out.println("An error occurred.");
 //      e.printStackTrace();
 //    }
-        
+        //2007-12-03T10:15:30
+        //LocalDateTime dt = LocalDateTime.parse("2020-01-01T12:51:32.124Z");
+        //LocalDateTime dt = LocalDateTime.parse("2020-01-01T12:51:32.124Z");
+        ZonedDateTime dt = ZonedDateTime.parse("2020-01-01T12:51:32.124Z");
+        System.out.println(dt);
+        System.out.println(dt.toLocalDateTime());
+
         for (String s : args){
             System.out.println(s);
         }
@@ -68,17 +96,33 @@ public class task3 {
         BufferedReader bufRead = new BufferedReader(input);
         String myLine = null;
 
+        
+        int volTotal = 0, vol1 = 0, vol2 = 0;
+        LocalDateTime begin = LocalDateTime.parse(args[1]);
+        LocalDateTime end = LocalDateTime.parse(args[2]);
+        ArrayList <String> al = new ArrayList<>();
+        
         try {
             while ( (myLine = bufRead.readLine()) != null)
             {    
-                String[] array1 = myLine.split(":");
+                //String[] array1 = myLine.split(":");
                 //System.out.println(array1.length);
                 // проверить что есть правильные данные
-                String[] array2 = array1[0].split(" ");
+                //String[] array2 = array1[0].split(" ");
+                //String[] array2 = array1;
                 //System.out.println(array2.length);
-                for (int i = 0; i < array2.length; i++)
-                    //function(array1[0], array2[i]);
-                    System.out.println(array2[i]);
+//                for (int i = 0; i < array2.length; i++)
+//                    //function(array1[0], array2[i]);
+//                    System.out.println(array2[i]);
+                System.out.println(myLine);
+                
+                if (myLine.indexOf("объем бочки")>0) volTotal = getNumber(myLine);
+                if (volTotal < 0) {
+                    System.out.print("Ошибка в парсинге volTotal");
+                    return;
+                }
+                
+                
             }
         }
         catch(IOException e){
