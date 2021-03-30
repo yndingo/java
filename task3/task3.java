@@ -123,7 +123,7 @@ public class task3 {
         BufferedReader bufRead = new BufferedReader(input);
         String myLine = null;
 
-        int volTotal = 0, volNow = 0, volAdd = 0;
+        int volTotal = 0, volNowStart = 0, volNow = 0, volAdd = 0;
         int volAddTotal = 0, volAddFails = 0, numTriesAdd = 0, numFailsAdd = 0; 
         int volSubTotal = 0, volSubFails = 0, numTriesSub = 0, numFailsSub = 0; 
         
@@ -149,7 +149,10 @@ public class task3 {
                 System.out.print("Ошибка в парсинге volTotal");
                 return;
             }
-            if (al.get(i).indexOf("текущий объем")>0) volNow = getNumber(al.get(i));
+            if (al.get(i).indexOf("текущий объем")>0) {
+                volNow = getNumber(al.get(i));
+                volNowStart = volNow;
+            }
             if (volNow < 0) {
                 System.out.print("Ошибка в парсинге volNow");
                 return;
@@ -203,9 +206,11 @@ public class task3 {
         System.out.println("- какой процент ошибок был допущен за указанный период? -- " + (double)numFailsSub * 100 / numTriesSub +"%");
         System.out.println("- какой объем воды был слит из бочки за указанный период? -- " + volSubTotal);
         System.out.println("- какой объем воды был не слит в бочку за указанный период? -- " + volSubFails);
-        
-        
-        
+        System.out.println();
+        System.out.println("- какой объем воды был в бочке в начале указанного периода? -- " + volNowStart);
+        System.out.println("- Какой в конце указанного периода? -- " + volNow); 
+                
+                
         
         
     }
