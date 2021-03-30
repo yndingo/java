@@ -123,7 +123,12 @@ public class task3 {
         BufferedReader bufRead = new BufferedReader(input);
         String myLine = null;
 
-        int volTotal = 0, volNow = 0, volAdd = 0, numTries = 0, numFails = 0;
+        int volTotal = 0, volNow = 0, volAdd = 0;
+        int volAddTotal = 0, volAddFails = 0, numTriesAdd = 0, numFailsAdd = 0; 
+        int volSubTotal = 0, volSubFails = 0, numTriesSub = 0, numFailsSub = 0; 
+        
+        
+        
         LocalDateTime begin = LocalDateTime.parse(args[1]);
         LocalDateTime end = LocalDateTime.parse(args[2]);
         LocalDateTime checkDate = LocalDateTime.of(1,1,1,1,1);
@@ -157,22 +162,51 @@ public class task3 {
 //                System.out.println("inPeriod");
             if (al.get(i).indexOf("-")>0) volAdd = getDateVol(al.get(i),begin,end);
             if (volAdd > 0) {
-                numTries++;
-                if (al.get(i).indexOf("успех")>0) {
-                    volNow += volAdd;
-                    if (volNow > volTotal) volNow = volTotal;
+                if (al.get(i).indexOf("top")>0) {
+                //наливаем    
+                    numTriesAdd++;
+                    if (al.get(i).indexOf("успех")>0) {
+                        volNow += volAdd;
+                        volAddTotal += volAdd;
+                        if (volNow > volTotal) volNow = volTotal;
+                    }
+                    else {
+                        numFailsAdd++;
+                        volAddFails+= volAdd;
+                    }
                 }
-                else numFails++;
-            }
-           
+                else{
+                //сливаем
+                    numTriesSub++;
+                    if (al.get(i).indexOf("успех")>0) {
+                        volNow -= volAdd;
+                        volSubTotal += volAdd;
+                        if (volNow < 0) volNow = 0;
+                    }
+                    else {
+                        numFailsSub++;
+                        volSubFails+= volAdd;
+                    }
+                }
 
-        }
+            }
             
+        }
+        
+        System.out.println("- какое количество попыток налить воду в бочку было за указанный период? -- " + numTriesAdd);
+        System.out.println("- какой процент ошибок был допущен за указанный период? -- " + (double)numFailsAdd * 100 / numTriesAdd +"%");
+        System.out.println("- какой объем воды был налит в бочку за указанный период? -- " + volAddTotal);
+        System.out.println("- какой объем воды был не налит в бочку за указанный период? -- " + volAddFails);
+        System.out.println();
+        System.out.println("- какое количество попыток слить воду в бочку было за указанный период? -- " + numTriesSub);
+        //System.out.println("- какой процент ошибок был допущен за указанный период? -- " + numFailsSub);
+        System.out.println("- какой процент ошибок был допущен за указанный период? -- " + (double)numFailsSub * 100 / numTriesSub +"%");
+        System.out.println("- какой объем воды был слит из бочки за указанный период? -- " + volSubTotal);
+        System.out.println("- какой объем воды был не слит в бочку за указанный период? -- " + volSubFails);
         
         
-        System.out.println("- какое количество попыток налить воду в бочку было за указанный период? -- " + numTries);
-        System.out.println("- какой процент ошибок был допущен за указанный период? -- " + numFails);
-        System.out.println("- какой объем воды был налит в бочку за указанный период? -- " + numFails);
+        
+        
         
     }
     
