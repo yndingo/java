@@ -44,7 +44,7 @@ public class task3 {
          String result="";
          while (m.find()){
              result+=m.group();
-             System.out.println(result);
+             //System.out.println(result);
          }
          try {
              return Integer.parseInt(result);
@@ -59,7 +59,7 @@ public class task3 {
          String result="";
          while (m.find()){
              result+=m.group();
-             System.out.println(result);
+             //System.out.println(result);
          }
          try {
              
@@ -83,7 +83,7 @@ public class task3 {
              System.out.println();
              LocalDateTime checkDate = ZonedDateTime.parse(result).toLocalDateTime();
              if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
-                 System.out.println("inPeriod");
+                 //System.out.println("inPeriod");
                  return getNumber(s,"l");
              }    
          }
@@ -106,7 +106,7 @@ public class task3 {
 //      e.printStackTrace();
 //    }
         for (String s : args){
-            System.out.println(s);
+            //System.out.println(s);
         }
         if (args.length == 0) {
             System.out.println("Не найдено имя файла для анализа");
@@ -123,7 +123,7 @@ public class task3 {
         BufferedReader bufRead = new BufferedReader(input);
         String myLine = null;
 
-        int volTotal = 0, volNow = 0, volEnd = 0;
+        int volTotal = 0, volNow = 0, volAdd = 0, numTries = 0, numFails = 0;
         LocalDateTime begin = LocalDateTime.parse(args[1]);
         LocalDateTime end = LocalDateTime.parse(args[2]);
         LocalDateTime checkDate = LocalDateTime.of(1,1,1,1,1);
@@ -131,9 +131,13 @@ public class task3 {
         
         try {
             while ( (myLine = bufRead.readLine()) != null) al.add(myLine);
+        }
+        catch(IOException e){
+            System.out.println(e);
+        }
 
         for (int i=0;i<al.size();i++){
-            System.out.println(al.get(i));                
+            //System.out.println(al.get(i));                
 
             if (al.get(i).indexOf("объем бочки")>0) volTotal = getNumber(al.get(i));
             if (volTotal < 0) {
@@ -151,35 +155,25 @@ public class task3 {
 //            if (al.get(i).indexOf("-")>0) volEnd = getDate(al.get(i),begin,end);
 //            if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
 //                System.out.println("inPeriod");
-            if (al.get(i).indexOf("-")>0) volEnd = getDateVol(al.get(i),begin,end);
-            if (volEnd > 0) {
-                System.out.print(volEnd);
+            if (al.get(i).indexOf("-")>0) volAdd = getDateVol(al.get(i),begin,end);
+            if (volAdd > 0) {
+                numTries++;
+                if (al.get(i).indexOf("успех")>0) {
+                    volNow += volAdd;
+                    if (volNow > volTotal) volNow = volTotal;
+                }
+                else numFails++;
             }
-            
-            
-//                if (check < 0) {
-//                    System.out.print("Ошибка в парсинге volTotal");
-//                    return;
-//                }    
-                
-                
-                
-//            if (al.get(i).indexOf("wanna")>0) volTotal = getNumber(al.get(i));
-//                if (volTotal < 0) {
-//                    System.out.print("Ошибка в парсинге volTotal");
-//                    return;
-//                }    
-//            
-//                
-//                
-//                
+           
 
         }
             
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
+        
+        
+        System.out.println("- какое количество попыток налить воду в бочку было за указанный период? -- " + numTries);
+        System.out.println("- какой процент ошибок был допущен за указанный период? -- " + numFails);
+        System.out.println("- какой объем воды был налит в бочку за указанный период? -- " + numFails);
+        
     }
     
 }
