@@ -54,26 +54,43 @@ public class task3 {
              return -1;
          }
     }
-   
-   static LocalDateTime getDate(String s, LocalDateTime begin, LocalDateTime end){        
-        System.out.println(s); 
-        //Matcher m = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}\\d{2}\\d{2}\\.\\d{3}").matcher(s);
-         Matcher m = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z").matcher(s);
+   static int getNumber(String s,String s2){        
+         Matcher m = Pattern.compile("\\d+"+s2).matcher(s);
          String result="";
          while (m.find()){
              result+=m.group();
              System.out.println(result);
          }
          try {
+             
+             return new Integer(getNumber(result));
+         }
+         catch(NumberFormatException e){
+             System.out.println(e);
+             return -1;
+         }
+    }
+   static int getDateVol(String s, LocalDateTime begin, LocalDateTime end){        
+        //System.out.println(s); 
+        //Matcher m = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}\\d{2}\\d{2}\\.\\d{3}").matcher(s);
+         Matcher m = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z").matcher(s);
+         String result="";
+         while (m.find()){
+             result+=m.group();
+             //System.out.println(result);
+         }
+         try {
              System.out.println();
              LocalDateTime checkDate = ZonedDateTime.parse(result).toLocalDateTime();
-             if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) 
-                System.out.println("inPeriod");
+             if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
+                 System.out.println("inPeriod");
+                 return getNumber(s,"l");
+             }    
          }
          catch(Exception e){
-             System.out.println(e);
-             return ZonedDateTime.of(0, 0, 0, 0, 0, 0, 0, ZoneId.systemDefault()).toLocalDateTime();
+             System.out.println(e);             
          }
+         return -1;
     }
     public static void main(String[] args){
         
@@ -88,14 +105,9 @@ public class task3 {
 //      System.out.println("An error occurred.");
 //      e.printStackTrace();
 //    }
-        ZonedDateTime dt = ZonedDateTime.parse("2020-01-01T12:51:32.124Z");
-        System.out.println(dt);
-        System.out.println(dt.toLocalDateTime());
-
         for (String s : args){
             System.out.println(s);
         }
-        
         if (args.length == 0) {
             System.out.println("Не найдено имя файла для анализа");
             return;
@@ -108,11 +120,9 @@ public class task3 {
             System.out.println(e);
             return;
         }
-        
         BufferedReader bufRead = new BufferedReader(input);
         String myLine = null;
 
-        
         int volTotal = 0, volNow = 0, volEnd = 0;
         LocalDateTime begin = LocalDateTime.parse(args[1]);
         LocalDateTime end = LocalDateTime.parse(args[2]);
@@ -121,7 +131,6 @@ public class task3 {
         
         try {
             while ( (myLine = bufRead.readLine()) != null) al.add(myLine);
-            //System.out.println(al);
 
         for (int i=0;i<al.size();i++){
             System.out.println(al.get(i));                
@@ -132,19 +141,19 @@ public class task3 {
                 return;
             }
             if (al.get(i).indexOf("текущий объем")>0) volNow = getNumber(al.get(i));
-            if (volTotal < 0) {
-                System.out.print("Ошибка в парсинге volTotal");
+            if (volNow < 0) {
+                System.out.print("Ошибка в парсинге volNow");
                 return;
             }
 //            if (al.get(i).indexOf("-")>0) checkDate = getDate(al.get(i));
 //            if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
 //                System.out.println("inPeriod");
-            if (al.get(i).indexOf("-")>0) volEnd = getDate(al.get(i),begin,end);
-            if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
-                System.out.println("inPeriod");
-
-qwe
-                
+//            if (al.get(i).indexOf("-")>0) volEnd = getDate(al.get(i),begin,end);
+//            if (checkDate.isAfter( begin ) && checkDate.isBefore(end)) {
+//                System.out.println("inPeriod");
+            if (al.get(i).indexOf("-")>0) volEnd = getDateVol(al.get(i),begin,end);
+            if (volEnd > 0) {
+                System.out.print(volEnd);
             }
             
             
