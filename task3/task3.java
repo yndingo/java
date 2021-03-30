@@ -171,7 +171,11 @@ public class task3 {
                     if (al.get(i).indexOf("успех")>0) {
                         volNow += volAdd;
                         volAddTotal += volAdd;
-                        if (volNow > volTotal) volNow = volTotal;
+                        if (volNow > volTotal) {
+                            numFailsAdd++;
+                            volAddFails+= volAdd;
+                            volNow = volTotal;
+                        }
                     }
                     else {
                         numFailsAdd++;
@@ -184,7 +188,11 @@ public class task3 {
                     if (al.get(i).indexOf("успех")>0) {
                         volNow -= volAdd;
                         volSubTotal += volAdd;
-                        if (volNow < 0) volNow = 0;
+                        if (volNow < 0) {
+                            numFailsSub++;
+                            volSubFails+= volAdd;
+                            volNow = 0;
+                        }
                     }
                     else {
                         numFailsSub++;
