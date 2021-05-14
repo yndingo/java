@@ -8,8 +8,6 @@
 Введите ваши сообщения”, после чего приложение должно работать, как в задании 2.
 Если при запуске не передается аргумент, приложение должно работать, как в задании 2.
  */
-//D:\test.txt если вводить русские буквы то может путь некорректно распознаться и писаться квадратиками
-//поэтому файл не будет найден
 package Task3;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,12 +20,17 @@ public class IOChamber {
         Scanner sc = new Scanner(System.in);
         Boolean fileExists = false;
         ArrayList al = new ArrayList();
-        String str = sc.nextLine();
-
+        String str = null;
+        try{
+            str = args[0];
+        }
+        catch(ArrayIndexOutOfBoundsException e){}        
+        
         FileReader input = null;
 
         try{
             input = new FileReader(str);
+            //System.out.println(str);
             fileExists = true;
         }
         catch (Exception e){
