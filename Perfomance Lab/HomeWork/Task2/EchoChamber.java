@@ -12,7 +12,7 @@ public class EchoChamber {
         Scanner sc = new Scanner(System.in);
         ArrayList al = new ArrayList();
         String str = sc.nextLine();
-        while (str.equalsIgnoreCase("") == false){                        
+        while (!str.equalsIgnoreCase("")){                          
             al.add(str);
             str = sc.nextLine();
         }
