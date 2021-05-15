@@ -21,20 +21,18 @@ public class IOChamber {
         Boolean fileExists = false;
         ArrayList al = new ArrayList();
         String str = null;
-        try{
-            str = args[0];
-        }
-        catch(ArrayIndexOutOfBoundsException e){}        
         
         FileReader input = null;
 
         try{
+            if (args.length > 0) str = args[0];
             input = new FileReader(str);
             //System.out.println(str);
             fileExists = true;
         }
         catch (Exception e){
-            System.out.println("Файл не распознан. Введите ваши сообщения");
+            System.out.println("Файл не распознан. Введите ваши сообщения.");
+            System.out.println("Прерывание: " + e);
         }
         if (fileExists) {
             BufferedReader bufRead = new BufferedReader(input);
