@@ -1,4 +1,4 @@
-package ru.pflb.homework2_2;
+package ru.pflb;
 
 import javax.print.attribute.standard.*;
 import ru.pflb.mq.dummy.exception.DummyException;
@@ -11,9 +11,9 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 
 public class Main {
-    
+
     public static void main(String[] args) throws DummyException{
-        
+
         for (String s : args){
             System.out.println(s);
         }
@@ -35,19 +35,29 @@ public class Main {
         try {
             while ( (myLine = bufRead.readLine())!=null )
                 queue.offer(myLine);
-        } 
+        }
         catch(Exception e){System.out.println(e);}
-        
+
         ConnectionImpl ConImpl = new ConnectionImpl();
         ConImpl.start();
         SessionImpl SessImpl = (SessionImpl)(ConImpl.createSession(true));
         DestinationImpl DestImpl = (DestinationImpl)(SessImpl.createDestination("test"));
         ProducerImpl ProdImpl = (ProducerImpl)(SessImpl.createProducer(DestImpl));
         //ProdImpl.send("World");
-        
+
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void run() {
+                SessImpl.close();
+                ConImpl.close();
+                //System.out.println("Обработка прерывания, останавливаем сессию и соединение");
+            }
+        });
+
         String str;
         while ( (str = queue.poll()) != null){
             //System.out.println(str);
+            //s = sc.nextLine();
+            //if (sc.nextLine().isEmpty()) break;
             queue.offer(str);
             ProdImpl.send(str);
             try{
@@ -55,11 +65,12 @@ public class Main {
             }
             catch(InterruptedException e){
                 System.out.println(e);
-            }  
+            }
         }
-
         SessImpl.close();
         ConImpl.close();
+
+
     }
-    
+
 }
