@@ -24,7 +24,7 @@ class GlobalKeyListenerExample implements NativeKeyListener {
 
             if (e.getKeyCode() == NativeKeyEvent.VC_ESCAPE) {
                     try {
-                            System.out.println("Нажата кнопка ESC. Завершаем работу.");
+                            System.out.println("РќР°Р¶Р°С‚Р° РєРЅРѕРїРєР° ESC. Р—Р°РІРµСЂС€Р°РµРј СЂР°Р±РѕС‚Сѓ.");
                             exit = true;
                             GlobalScreen.unregisterNativeHook();
                     } catch (NativeHookException nativeHookException) {
@@ -68,7 +68,7 @@ public class Main {
             System.out.println(s);
         }
         if (args.length == 0) {
-            System.out.println("Не найдено имя файла для анализа");
+            System.out.println("РќРµ РЅР°Р№РґРµРЅРѕ РёРјСЏ С„Р°Р№Р»Р° РґР»СЏ Р°РЅР°Р»РёР·Р°");
             return;
         }
         FileReader input = null;
@@ -96,7 +96,7 @@ public class Main {
         
             Destination dest = session.createDestination("test");
             Producer prod = session.createProducer(dest);
-            System.out.println("Для остановки программы нажмите ESC.");
+            System.out.println("Р”Р»СЏ РѕСЃС‚Р°РЅРѕРІРєРё РїСЂРѕРіСЂР°РјРјС‹ РЅР°Р¶РјРёС‚Рµ ESC.");
 
             while (true){
                 if (GlobalKeyListenerExample.exit) break;
