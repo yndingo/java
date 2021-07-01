@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+    <mark name="Koenigsegg" id="137">
+        <code>KOENIGSEGG</code>      
+        <folder name="Megane RS, II" id="54085">
+            <model id="54083">MEGANE_RS</model>
+            <generation id="54085">8252265</generation>
+            <modification name="2.0 MT (224 л.с.)" id="13897">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, II</folder_id>
+                <modification_id>2.0 MT (224 л.с.)</modification_id>
+                <configuration_id>8252305</configuration_id>
+                <tech_param_id>6323977</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2004 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (224 л.с.)" id="13893">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, II</folder_id>
+                <modification_id>2.0 MT (224 л.с.)</modification_id>
+                <configuration_id>8252306</configuration_id>
+                <tech_param_id>6324023</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2004 - 2006</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Megane RS, III Рестайлинг" id="54093">
+            <model id="54083">MEGANE_RS</model>
+            <generation id="54093">20158209</generation>
+            <modification name="2.0 MT (250 л.с.)" id="98448">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III Рестайлинг</folder_id>
+                <modification_id>2.0 MT (250 л.с.)</modification_id>
+                <configuration_id>20158211</configuration_id>
+                <tech_param_id>20176830</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2014 - 2016</years>
+                <complectations>
+                    <complectation id="20176857">Sport</complectation>
+                </complectations>
+            </modification>
+            <modification name="2.0 MT (265 л.с.)" id="89025">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III Рестайлинг</folder_id>
+                <modification_id>2.0 MT (265 л.с.)</modification_id>
+                <configuration_id>20158211</configuration_id>
+                <tech_param_id>20481863</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2013 - 2016</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="275 Trophy 2.0 MT (275 л.с.)" id="98164">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III Рестайлинг</folder_id>
+                <modification_id>275 Trophy 2.0 MT (275 л.с.)</modification_id>
+                <configuration_id>20158211</configuration_id>
+                <tech_param_id>20481883</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2014 - 2016</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Megane RS, III" id="54091">
+            <model id="54083">MEGANE_RS</model>
+            <generation id="54091">7942326</generation>
+            <modification name="2.0 MT (250 л.с.)" id="103487">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III</folder_id>
+                <modification_id>2.0 MT (250 л.с.)</modification_id>
+                <configuration_id>7942351</configuration_id>
+                <tech_param_id>20495879</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2011 - 2013</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Cup 2.0 MT (250 л.с.)" id="103505">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III</folder_id>
+                <modification_id>Cup 2.0 MT (250 л.с.)</modification_id>
+                <configuration_id>7942351</configuration_id>
+                <tech_param_id>7942431</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2011 - 2013</years>
+                <complectations>
+                    <complectation id="7942433">Sport</complectation>
+                </complectations>
+            </modification>
+            <modification name="Red Bull Racing RB8 Limited Edition 2.0 MT (265 л.с.)" id="81068">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, III</folder_id>
+                <modification_id>Red Bull Racing RB8 Limited Edition 2.0 MT (265 л.с.)</modification_id>
+                <configuration_id>7942351</configuration_id>
+                <tech_param_id>20495561</tech_param_id>
+                <body_type>Хэтчбек 3 дв.</body_type>
+                <years>2012 - 2013</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Megane RS, IV" id="21366556">
+            <model id="54083">MEGANE_RS</model>
+            <generation id="21366556">21366556</generation>
+            <modification name="Trophy 1.8 AMT (300 л.с.)" id="21366788">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, IV</folder_id>
+                <modification_id>Trophy 1.8 AMT (300 л.с.)</modification_id>
+                <configuration_id>21366609</configuration_id>
+                <tech_param_id>21366788</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2018 - по н.в.</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.8 MT (280 л.с.)" id="21366719">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, IV</folder_id>
+                <modification_id>1.8 MT (280 л.с.)</modification_id>
+                <configuration_id>21366609</configuration_id>
+                <tech_param_id>21366719</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2018 - по н.в.</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Trophy 1.8 MT (300 л.с.)" id="21366776">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, IV</folder_id>
+                <modification_id>Trophy 1.8 MT (300 л.с.)</modification_id>
+                <configuration_id>21366609</configuration_id>
+                <tech_param_id>21366776</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2018 - по н.в.</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.8 AMT (280 л.с.)" id="21366742">
+                <mark_id>Renault</mark_id>
+                <folder_id>Megane RS, IV</folder_id>
+                <modification_id>1.8 AMT (280 л.с.)</modification_id>
+                <configuration_id>21366609</configuration_id>
+                <tech_param_id>21366742</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2018 - по н.в.</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Espace, I" id="3032">
+            <model id="3031">ESPACE</model>
+            <generation id="3032">3490082</generation>
+            <modification name="2.0 MT (114 л.с.) 4WD" id="13595">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.0 MT (114 л.с.) 4WD</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473956</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1988 - 1991</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (114 л.с.)" id="13594">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.0 MT (114 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473947</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1989 - 1990</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (103 л.с.)" id="13593">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.0 MT (103 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473938</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1988 - 1990</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (105 л.с.)" id="13592">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.0 MT (105 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473931</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1984 - 1990</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.1d MT (88 л.с.)" id="13596">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.1d MT (88 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473961</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1984 - 1990</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.2 MT (110 л.с.)" id="22548401">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.2 MT (110 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>22548401</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1988 - 1991</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.9 MT (153 л.с.) 4WD" id="13598">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.9 MT (153 л.с.) 4WD</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473972</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1988 - 1990</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.9 MT (153 л.с.)" id="13597">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, I</folder_id>
+                <modification_id>2.9 MT (153 л.с.)</modification_id>
+                <configuration_id>20473885</configuration_id>
+                <tech_param_id>20473966</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1986 - 1990</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Espace, IV" id="3035">
+            <model id="3031">ESPACE</model>
+            <generation id="3035">4602275</generation>
+            <modification name="Grand 2.2d MT (150 л.с.)" id="13630">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 2.2d MT (150 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20496377</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 2.0 AT (165 л.с.)" id="92363">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 2.0 AT (165 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20495282</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 1.9d MT (117 л.с.)" id="13629">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 1.9d MT (117 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20495957</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 2.0 MT (165 л.с.)" id="13627">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 2.0 MT (165 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20397258</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 2.2d AT (150 л.с.)" id="92364">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 2.2d AT (150 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20495813</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 3.0d AT (180 л.с.)" id="13631">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 3.0d AT (180 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>20397251</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 3.5 AT (245 л.с.)" id="13628">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>Grand 3.5 AT (245 л.с.)</modification_id>
+                <configuration_id>20488149</configuration_id>
+                <tech_param_id>4602279</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (170 л.с.)" id="6316201">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.0 MT (170 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>6316201</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2005 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (136 л.с.)" id="13614">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.0 MT (136 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>20397241</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.2d MT (150 л.с.)" id="13616">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.2d MT (150 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>4602281</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 AT (163 л.с.)" id="13619">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.0 AT (163 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>6316200</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="3.0d AT (177 л.с.)" id="13617">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>3.0d AT (177 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>20494447</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.9d MT (120 л.с.)" id="13613">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>1.9d MT (120 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>4602280</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.2d AT (150 л.с.)" id="92361">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.2d AT (150 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>6316220</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 AT (170 л.с.)" id="6316202">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.0 AT (170 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>6316202</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2005 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="3.5 AT (245 л.с.)" id="13618">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>3.5 AT (245 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>20495481</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (163 л.с.)" id="13615">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, IV</folder_id>
+                <modification_id>2.0 MT (163 л.с.)</modification_id>
+                <configuration_id>4602276</configuration_id>
+                <tech_param_id>20397227</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2002 - 2006</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Espace, V" id="20504550">
+            <model id="3031">ESPACE</model>
+            <generation id="20504550">20504550</generation>
+            <modification name="1.8 AMT (225 л.с.)" id="21821493">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, V</folder_id>
+                <modification_id>1.8 AMT (225 л.с.)</modification_id>
+                <configuration_id>20507217</configuration_id>
+                <tech_param_id>21821493</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2017 - 2019</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.6 AMT (200 л.с.)" id="20507254">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, V</folder_id>
+                <modification_id>1.6 AMT (200 л.с.)</modification_id>
+                <configuration_id>20507217</configuration_id>
+                <tech_param_id>20507254</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2015 - 2019</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.6d AMT (160 л.с.)" id="20507337">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, V</folder_id>
+                <modification_id>1.6d AMT (160 л.с.)</modification_id>
+                <configuration_id>20507217</configuration_id>
+                <tech_param_id>20507337</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2015 - 2019</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.6d MT (130 л.с.)" id="20507297">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, V</folder_id>
+                <modification_id>1.6d MT (130 л.с.)</modification_id>
+                <configuration_id>20507217</configuration_id>
+                <tech_param_id>20507297</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2015 - 2019</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+        <folder name="Espace, III" id="3034">
+            <model id="3031">ESPACE</model>
+            <generation id="3034">3490078</generation>
+            <modification name="2.2d MT (113 л.с.)" id="13609">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.2d MT (113 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>5110470</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1996 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="3.0 MT (167 л.с.)" id="13611">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>3.0 MT (167 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>20495387</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1996 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 AT (114 л.с.)" id="92359">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.0 AT (114 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>6315761</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1996 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="1.9d MT (98 л.с.)" id="13606">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>1.9d MT (98 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>6315880</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1999 - 2002</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="3.0 AT (190 л.с.)" id="13612">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>3.0 AT (190 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>5110469</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1998 - 2002</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (114 л.с.)" id="13607">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.0 MT (114 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>20494318</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1996 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 AT (140 л.с.)" id="6315760">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.0 AT (140 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>6315760</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1998 - 2002</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="3.0 AT (167 л.с.)" id="92360">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>3.0 AT (167 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>20494034</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1996 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.2d MT (130 л.с.)" id="13610">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.2d MT (130 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>20494016</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2001 - 2002</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="2.0 MT (140 л.с.)" id="13608">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>2.0 MT (140 л.с.)</modification_id>
+                <configuration_id>5110466</configuration_id>
+                <tech_param_id>5110468</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1998 - 2002</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 3.0 AT (190 л.с.)" id="13625">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>Grand 3.0 AT (190 л.с.)</modification_id>
+                <configuration_id>20488080</configuration_id>
+                <tech_param_id>20495468</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1998 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 2.0 MT (114 л.с.)" id="13620">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>Grand 2.0 MT (114 л.с.)</modification_id>
+                <configuration_id>20488080</configuration_id>
+                <tech_param_id>5110467</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1997 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 3.0 MT (167 л.с.)" id="13624">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>Grand 3.0 MT (167 л.с.)</modification_id>
+                <configuration_id>20488080</configuration_id>
+                <tech_param_id>20397229</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>1997 - 2000</years>
+                <complectations></complectations>
+            </modification>
+            <modification name="Grand 2.2d MT (130 л.с.)" id="13622">
+                <mark_id>Renault</mark_id>
+                <folder_id>Espace, III</folder_id>
+                <modification_id>Grand 2.2d MT (130 л.с.)</modification_id>
+                <configuration_id>20488080</configuration_id>
+                <tech_param_id>6315841</tech_param_id>
+                <body_type>Минивэн</body_type>
+                <years>2000 - 2002</years>
+                <complectations></complectations>
+            </modification>          
+        </folder>
+    </mark>
+    <mark name="E-Car" id="2376">
+        <code>E_CAR</code>
+        <folder name="GD04B" id="20345949">
+            <model id="51142">GD04B</model>
+            <generation id="20345949">20345949</generation>
+            <modification name="Electro AT (6 кВт)" id="72042">
+                <mark_id>E-Car</mark_id>
+                <folder_id>GD04B</folder_id>
+                <modification_id>Electro AT (6 кВт)</modification_id>
+                <configuration_id>20467369</configuration_id>
+                <tech_param_id>20467401</tech_param_id>
+                <body_type>Хэтчбек 5 дв.</body_type>
+                <years>2012 - 2014</years>
+                <complectations></complectations>
+            </modification>
+        </folder>
+    </mark>
+</catalog>
