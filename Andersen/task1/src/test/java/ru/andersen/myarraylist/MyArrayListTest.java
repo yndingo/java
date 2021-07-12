@@ -1,28 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ru.andersen.myarraylist;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author Adminlocal
- */
+import lombok.extern.java.Log;
+
+@Log
 public class MyArrayListTest {
     
     public MyArrayListTest() {
     }
-
     /**
      * Test of size method, of class MyArrayList.
      */
     @Test
     public void testSize() {
-        System.out.println("size");
+        log.info("size");
         MyArrayList instance = new MyArrayList();
         int expResult = 0;
         int result = instance.size();
@@ -30,7 +23,7 @@ public class MyArrayListTest {
     }
     @Test
     public void testSize2() {
-        System.out.println("size2");
+        log.info("size2");
         MyArrayList instance = new MyArrayList();
         instance.add("1");
         int expResult = 1;
@@ -42,7 +35,7 @@ public class MyArrayListTest {
      */
     @Test
     public void testRangeCheck() {
-        System.out.println("rangeCheck");
+        log.info("rangeCheck");
         int index = 0;
         MyArrayList instance = new MyArrayList();
         assertThrows(IndexOutOfBoundsException.class, () -> {
@@ -51,7 +44,7 @@ public class MyArrayListTest {
     }
     @Test
     public void testRangeCheck2() {
-        System.out.println("rangeCheck");
+        log.info("rangeCheck2");
         int index = 0;
         MyArrayList instance = new MyArrayList();
         instance.add("1");
@@ -63,7 +56,7 @@ public class MyArrayListTest {
      */
     @Test
     public void testGet() {
-        System.out.println("get");
+        log.info("get");        
         int index = 0;
         MyArrayList instance = new MyArrayList();
         assertThrows(IndexOutOfBoundsException.class, () -> {
@@ -72,7 +65,7 @@ public class MyArrayListTest {
     }
     @Test
     public void testGet2() {
-        System.out.println("get");
+        log.info("get2");
         int index = 0;
         MyArrayList instance = new MyArrayList();
         instance.add("1");
@@ -86,7 +79,7 @@ public class MyArrayListTest {
      */
     @Test
     public void testAdd() {
-        System.out.println("add");
+        log.info("add");
         Object e = null;
         MyArrayList instance = new MyArrayList();
         boolean expResult = true;
@@ -95,68 +88,11 @@ public class MyArrayListTest {
     }
 
     /**
-     * Test of getSize method, of class MyArrayList.
-     */
-    @Test
-    public void testGetSize() {
-        System.out.println("getSize");
-        MyArrayList instance = new MyArrayList();
-        int expResult = 0;
-        int result = instance.getSize();
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of getModCount method, of class MyArrayList.
-     */
-    @Test
-    public void testGetModCount() {
-        System.out.println("getModCount");
-        MyArrayList instance = new MyArrayList();
-        int expResult = 0;
-        int result = instance.getModCount();
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of setElementData method, of class MyArrayList.
-     */
-    @Test
-    public void testSetElementData() {
-        System.out.println("setElementData");
-        Object[] elementData = null;
-        MyArrayList instance = new MyArrayList();
-        instance.setElementData(elementData);
-    }
-
-    /**
-     * Test of setSize method, of class MyArrayList.
-     */
-    @Test
-    public void testSetSize() {
-        System.out.println("setSize");
-        int size = 12;
-        MyArrayList instance = new MyArrayList();
-        instance.setSize(size);
-    }
-
-    /**
-     * Test of setModCount method, of class MyArrayList.
-     */
-    @Test
-    public void testSetModCount() {
-        System.out.println("setModCount");
-        int modCount = 0;
-        MyArrayList instance = new MyArrayList();
-        instance.setModCount(modCount);
-    }
-
-    /**
      * Test of equals method, of class MyArrayList.
      */
     @Test
     public void testEquals() {
-        System.out.println("equals");
+        log.info("equals");
         Object o = null;
         MyArrayList instance = new MyArrayList();
         boolean expResult = false;
@@ -165,26 +101,13 @@ public class MyArrayListTest {
     }
 
     /**
-     * Test of canEqual method, of class MyArrayList.
-     */
-    @Test
-    public void testCanEqual() {
-        System.out.println("canEqual");
-        Object other = null;
-        MyArrayList instance = new MyArrayList();
-        boolean expResult = false;
-        boolean result = instance.canEqual(other);
-        assertEquals(expResult, result);
-    }
-
-    /**
      * Test of hashCode method, of class MyArrayList.
      */
     @Test
     public void testHashCode() {
-        System.out.println("hashCode");
+        log.info("hashCode");
         MyArrayList instance = new MyArrayList();
-        int expResult = 205380;
+        int expResult = 1;
         int result = instance.hashCode();
         assertEquals(expResult, result);
     }
@@ -194,9 +117,9 @@ public class MyArrayListTest {
      */
     @Test
     public void testToString() {
-        System.out.println("toString");
+        log.info("toString");
         MyArrayList instance = new MyArrayList();
-        String expResult = "MyArrayList(elementData=[], size=0, modCount=0)";
+        String expResult = "[]";
         String result = instance.toString();
         assertEquals(expResult, result);
     }

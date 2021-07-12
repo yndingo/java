@@ -7,6 +7,7 @@ package ru.andersen.myarraylist;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import ru.andersen.myarraylist.exception.ExceptionLengthMoreThan20;
 
 /**
  *
@@ -18,10 +19,10 @@ public class MyExceptionTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void testException() {
         MyArrayList instance = new MyArrayList();
         for (int i=1;i<21;i++) instance.add("1");
-        assertThrows(MyException.class, () -> {
+        assertThrows(ExceptionLengthMoreThan20.class, () -> {
             instance.add("1");
         });
     }

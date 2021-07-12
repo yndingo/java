@@ -2,17 +2,9 @@ package ru.andersen.myarraylist;
 
 import java.util.AbstractList;
 import java.util.Arrays;
-import lombok.Data;
 
-import java.util.Iterator;
+import ru.andersen.myarraylist.exception.ExceptionLengthMoreThan20;
 
-class MyException extends RuntimeException{
-    public MyException(String errorMessage) {
-        super(errorMessage);
-    }    
-}
-
-@Data
 public class MyArrayList extends AbstractList{
 
     Object[] elementData;
@@ -61,7 +53,7 @@ public class MyArrayList extends AbstractList{
     public boolean add(Object e){
 	ensureCapacity(size + 1);
 	elementData[size++] = e;
-        if (size > 20) throw new MyException("Размер коллекции не может превышать 20");
+        if (size > 20) throw new ExceptionLengthMoreThan20("Размер коллекции не может превышать 20");
 	return true;
     }
 
