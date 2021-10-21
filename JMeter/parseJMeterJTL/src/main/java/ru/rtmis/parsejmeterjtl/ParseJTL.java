@@ -25,6 +25,13 @@ public class ParseJTL {
        //File fileIN        = FileUtils.getFile("c:/!d/testResults.jtl");
        //File fileOUT       = FileUtils.getFile("c:/!d/ramp.jtl");
        if (args.length == 0) {
+           System.out.println("обрабатываю лог JMeter testResults.jtl сгенерированный после теста\n" +
+                "где содержится информация в виде:\n\n" +
+                "2021-10-08 10:26:26,391,TC_01.Create_SEMD,200,'Number of samples in transaction : 1, number of failing samples : 0',UTG_TEST-1-1 1-259,,true,,284,1109,358,358,null,391,33,21\n" +
+                "2021-10-08 10:26:26,587,TC_01.Create_SEMD,200,'Number of samples in transaction : 1, number of failing samples : 0',UTG_TEST-1-1 1-87,,true,,284,1109,358,358,null,586,282,358\n" +
+                "выбираю в этом файле необходимый мне интервал времени\n" +
+                "Формирую ramp.jtl с заголовками 'timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect'\n");
+
            System.out.println("Данные вводить через параметры:");
            System.out.println("аргумент 1 - файл для ввода например: c:/!d/testResults.jtl");
            System.out.println("аргумент 2 - файл для ввода например: c:/!d/ramp.jtl");
