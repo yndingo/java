@@ -36,7 +36,7 @@ public class ParseDocker {
                    "{'@timestamp':'2021-10-14T03:53:46.087Z','@version':'1','message':'Template test.ftl processed in 0ms','logger_name':'ru.mis.template.engine.service.TemplateService','thread_name':'http-nio-8080-exec-2164','level':'INFO','level_value':20000,'request-chain-id':'123'}\n\n" +
                    "от туда вычленяю строки с 'processed in'\n" +
                    "и забираю дату и время и задержку\n" +
-                   "Формирую parse.log с заголовками 'DateTime,Delay'\n\n");
+                   "Формирую parse.log с заголовками 'DateTime,Delay'\n");
 
            System.out.println("Данные вводить через параметры:");
            System.out.println("аргумент 1 - файл для ввода например: c:/!d/docker.log");
