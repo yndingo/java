@@ -44,8 +44,9 @@ public class ParseDocker {
      
            System.exit(0);
        }
-       System.out.println("Начата работа с " + args[0] + " Вывод будет в " + args[1]);
+       System.out.println("Начата работа с " + args[0] + " Вывод будет в " + args[1] + "\n");
        
+       int maxDelay = 0;//вывожу информацию о максимальной задержке
        //file objects
        File fileIN        = FileUtils.getFile(args[0]);
        File fileOUT       = FileUtils.getFile(args[1]);
@@ -56,7 +57,7 @@ public class ParseDocker {
        // Format data and time to analyze
        DateTimeFormatter inputFormatWithMS = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
        DateTimeFormatter inputFormatSTD = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
-
+       
        //creating log
        writer.println("DateTime,Delay");
        try(LineIterator lineIterator = FileUtils.lineIterator(fileIN)) {
@@ -85,6 +86,8 @@ public class ParseDocker {
                     if (temp.contains("ms")){
                         // Parsing delay
                         temp = temp.substring(0, temp.length()-2);
+                        if (maxDelay < Integer.parseInt(temp))
+                            maxDelay = Integer.parseInt(temp);                                
                     }
                     result += temp+",";
                     //System.out.println(result);
@@ -94,7 +97,8 @@ public class ParseDocker {
                     writer.println(result.substring(0, result.length()-1));                                             
          }
            writer.close();
-           System.out.println("END parsing");
+           System.out.println("\n END parsing");
+           System.out.println("Максимальная задержка составила: " + maxDelay);
       }
    }
 }
