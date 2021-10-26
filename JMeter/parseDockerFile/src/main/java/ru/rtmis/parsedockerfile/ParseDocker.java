@@ -46,7 +46,10 @@ public class ParseDocker {
        }
        System.out.println("Начата работа с " + args[0] + " Вывод будет в " + args[1] + "\n");
        
-       int maxDelay = 0;//вывожу информацию о максимальной задержке
+       int maxDelay         = 0;        //вывожу информацию о максимальной задержке
+       String maxDelayTime  = "empty";  //для вывода времени максимальной задержки
+       String saveTime      = "empty";  //здесь сохраняется обработанное время - для вывода времени максимальной задержки
+       
        //file objects
        File fileIN        = FileUtils.getFile(args[0]);
        File fileOUT       = FileUtils.getFile(args[1]);
@@ -80,14 +83,17 @@ public class ParseDocker {
                         
                         //при простом приведении к строке toString обрезаются нулевые секунды вместо 03:00:00(3 часа 0 минут 0 секунд) будет 03:00
                         temp = ldt.format(inputFormatSTD);
+                        saveTime = temp;
                         //temp = date + " " + time;
                         //temp = date + " " + time.truncatedTo(ChronoUnit.SECONDS).format(inputFormatWithoutMS);
                     }                  
                     if (temp.contains("ms")){
                         // Parsing delay
                         temp = temp.substring(0, temp.length()-2);
-                        if (maxDelay < Integer.parseInt(temp))
-                            maxDelay = Integer.parseInt(temp);                                
+                        if (maxDelay < Integer.parseInt(temp)) {
+                            maxDelay = Integer.parseInt(temp);
+                            maxDelayTime = saveTime;
+                        }                          
                     }
                     result += temp+",";
                     //System.out.println(result);
@@ -98,7 +104,7 @@ public class ParseDocker {
          }
            writer.close();
            System.out.println("\n END parsing");
-           System.out.println("Максимальная задержка составила: " + maxDelay);
+           System.out.println("Максимальная задержка составила: " + maxDelay + " время: " + maxDelayTime);
       }
    }
 }
