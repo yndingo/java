@@ -9,3 +9,5 @@
 #3. 
 написать функцию для генерации пирамиды
 
+![3-1](https://user-images.githubusercontent.com/80397258/194868944-a40ec743-f6cf-41cf-95e7-67fa89a6ec3b.png)
+![3-2](https://user-images.githubusercontent.com/80397258/194868966-756fb98d-9bea-45be-ad12-99e3f94fb4e3.png)
